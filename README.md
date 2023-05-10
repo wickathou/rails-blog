@@ -79,15 +79,14 @@ Open your browser and go to
 
 ## ✅ Key Features <a name="current-features"></a>
 
-- [Done] **[Class builders]**
-- [Done] **[Separate files for each class]**
-- [Done] **[Test for each class method using mocks]**
+- [Done] **[db schema migrations created]**
+- [Done] **[Added pictures as standalone table]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Improve command line interface]**
+- [ ] **[Add models and views for app]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
