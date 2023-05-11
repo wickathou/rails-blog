@@ -7,12 +7,14 @@ class Post < ApplicationRecord
 
   after_save :update_post_counter
 
+  def return_last_five_comments
+    comments.last(5)
+  end
+
+  private
+
   def update_post_counter
     author.posts_count = author.posts.count
     author.save
-  end
-
-  def return_last_five_comments
-    comments.last(5)
   end
 end

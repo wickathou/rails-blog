@@ -10,10 +10,6 @@ class User < ApplicationRecord
 
   before_save :default_values
 
-  def default_values
-    self.picture_id ||= Picture.create.id
-  end
-
   def update_counters
     self.posts_count = posts.count
     self.likes_count = likes.count
@@ -23,5 +19,11 @@ class User < ApplicationRecord
 
   def return_last_three_posts
     posts.last(3)
+  end
+
+  private
+
+  def default_values
+    self.picture_id ||= Picture.create.id
   end
 end
