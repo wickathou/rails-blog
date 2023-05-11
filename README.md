@@ -54,6 +54,12 @@ Clone this repository to your desired folder:
 `bundle install`
 ### Usage
 
+First create the database by running the command
+`rails db:create`
+Then run the migrations by setting up the db
+`rails db:setup`
+Now seed the database with some data
+`rails db:seed`
 To run the project, use the command
 `rails s`
 Open your browser and go to
