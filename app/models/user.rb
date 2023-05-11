@@ -4,7 +4,7 @@ class User < ApplicationRecord
   has_many :likes
   has_many :liked_posts, through: :likes, source: :post
   has_many :liked_comments, through: :likes, source: :comment
-  validates :name, presence: true
+  validates :name, length:{maximum: 100}, presence: true
   validates :bio, length: { maximum: 300 }, allow_blank: true
   has_one :picture
 
