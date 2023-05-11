@@ -87,12 +87,13 @@ Open your browser and go to
 
 - [Done] **[db schema migrations created]**
 - [Done] **[Added pictures as standalone table]**
+- [Done] **[Added models and validations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add models and views for app]**
+- [ ] **[Add views for app]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -4,6 +4,6 @@ class Picture < ApplicationRecord
   before_save :placeholder_picture
 
   def placeholder_picture
-    self.picture_uri ||= "https://picsum.photos/200/300"
+    self.picture_uri ||= 'https://picsum.photos/200/300'
   end
 end
