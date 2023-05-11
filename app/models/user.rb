@@ -11,10 +11,7 @@ class User < ApplicationRecord
   before_save :default_values
 
   def update_counters
-    self.posts_count = posts.count
-    self.likes_count = likes.count
-    self.comments_count = comments.count
-    save
+    update(posts_count: posts.count, likes_count: likes.count, comments_count: comments.count)
   end
 
   def return_last_three_posts
