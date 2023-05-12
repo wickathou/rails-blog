@@ -15,7 +15,7 @@ class User < ApplicationRecord
   end
 
   def return_last_three_posts
-    posts.last(3)
+    posts.order('created_at Desc').last(3)
   end
 
   private
