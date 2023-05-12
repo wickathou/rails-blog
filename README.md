@@ -88,6 +88,7 @@ Open your browser and go to
 - [Done] **[db schema migrations created]**
 - [Done] **[Added pictures as standalone table]**
 - [Done] **[Added models and validations]**
+- [Done] **[Added unit tests]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
