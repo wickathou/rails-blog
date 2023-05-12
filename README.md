@@ -54,6 +54,12 @@ Clone this repository to your desired folder:
 `bundle install`
 ### Usage
 
+First create the database by running the command
+`rails db:create`
+Then run the migrations by setting up the db
+`rails db:setup`
+Now seed the database with some data
+`rails db:seed`
 To run the project, use the command
 `rails s`
 Open your browser and go to
@@ -81,12 +87,13 @@ Open your browser and go to
 
 - [Done] **[db schema migrations created]**
 - [Done] **[Added pictures as standalone table]**
+- [Done] **[Added models and validations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add models and views for app]**
+- [ ] **[Add views for app]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
