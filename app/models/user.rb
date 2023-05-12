@@ -6,6 +6,9 @@ class User < ApplicationRecord
   has_many :liked_comments, through: :likes, source: :comment
   validates :name, length: { maximum: 100 }, presence: true
   validates :bio, length: { maximum: 300 }, allow_blank: true
+  validates :posts_count, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :likes_count, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
+  validates :comments_count, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
   has_one :picture
 
   before_save :default_values

@@ -9,6 +9,7 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
+    - [Testing](#testing)
   - [👤 Authors ](#-authors-)
   - [✅ Key Features ](#-key-features-)
   - [🔭 Future Features ](#-future-features-)
@@ -65,6 +66,11 @@ To run the project, use the command
 Open your browser and go to
 `http://localhost:3000/`
 
+### Testing
+
+To run the tests, run the command
+`bundle exec rspec spec`
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 👤 Authors <a name="author"></a>
@@ -75,12 +81,6 @@ Open your browser and go to
 - LinkedIn: [@javierjhm](https://linkedin.com/in/javierjhm)
 - Portfolio: [End Design Co.](https://works.enddesign.co/)
 
-**Ayo Moses**
-
-- GitHub: [@AyoMoses1](https://github.com/AyoMoses1)
-- Twitter: [@AyoMoses](https://twitter.com/Ayo_Moses1)
-- LinkedIn: [Ayo Moses](https://www.linkedin.com/in/ayomoses/)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## ✅ Key Features <a name="current-features"></a>
@@ -88,6 +88,7 @@ Open your browser and go to
 - [Done] **[db schema migrations created]**
 - [Done] **[Added pictures as standalone table]**
 - [Done] **[Added models and validations]**
+- [Done] **[Added unit tests]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
