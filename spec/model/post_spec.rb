@@ -1,4 +1,3 @@
-# setup a test for User
 require_relative '../rails_helper'
 
 RSpec.describe Post, type: :model do

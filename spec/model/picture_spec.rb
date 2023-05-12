@@ -1,4 +1,3 @@
-# setup a test for Picture
 require_relative '../rails_helper'
 
 RSpec.describe Picture, type: :model do
