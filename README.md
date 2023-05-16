@@ -89,6 +89,7 @@ To run the tests, run the command
 - [Done] **[Added pictures as standalone table]**
 - [Done] **[Added models and validations]**
 - [Done] **[Added unit tests]**
+- [Done] **[Add controller for User and Post models]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
