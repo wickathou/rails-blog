@@ -2,6 +2,18 @@ require 'rails_helper'
 
 RSpec.describe 'Users', type: :request do
   describe 'GET /index' do
-    pending "add some examples (or delete) #{__FILE__}"
+    it 'returns http success' do
+      get '/users/'
+      expect(response).to have_http_status(:success)
+      expect(response).to render_template('users/index')
+      assert_select 'h1', 'Users'
+    end
+
+    it 'returns http success' do
+      get '/users/1'
+      expect(response).to have_http_status(:success)
+      expect(response).to render_template('users/show')
+      assert_select 'h2', 'User data'
+    end
   end
 end
