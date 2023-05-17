@@ -1,0 +1,9 @@
+<% @posts.each do |post|%>
+  <div class="flex flex-col gap-2">
+  <%= render "partials/post_preview" %>
+  <ul class="w-full m-0 p-0 border-4">
+    <% post.return_last_five_comments.each do%>
+      <%= render "partials/comments" %>
+    <% end %>
+  </ul>
+<% end %>

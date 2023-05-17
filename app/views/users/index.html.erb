@@ -1,1 +1,5 @@
-<h1>Users</h1>
+<ul class="w-full m-0 p-0">
+  <% @users.each do %>
+    <%= render "partials/user_listing" %>
+  <% end %>
+</ul>
