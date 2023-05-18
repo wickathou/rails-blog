@@ -1,5 +1,7 @@
 <ul class="w-full m-0 p-0">
-  <% @users.each do %>
-    <%= render "partials/user_listing" %>
+  <% @users.each do |user|%>
+    <%= link_to user_path(user), class:"cursor-pointer" do%>
+      <%= render partial: "partials/user_listing", locals: {user: user} %>
+    <% end %>
   <% end %>
 </ul>

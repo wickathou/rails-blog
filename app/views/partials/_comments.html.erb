@@ -1,4 +1,4 @@
 <li class="list-none">
-  <h4>Username:</h4>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque labore</p>
+  <h4><%= User.find(comment.author_id).name %>:</h4>
+  <p><%= comment.text %></p>
 </li>

@@ -1,12 +1,12 @@
 <div class="flex flex-col gap-2">
   <div class="border-4 p-2">
     <h4>Bio</h4>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime neque labore quod voluptatum voluptatibus odio alias repellendus officia officiis perspiciatis cupiditate quaerat exercitationem tempora ipsum praesentium, repellat ab, fugiat reprehenderit.</p>
+    <p><%= @user.bio %></p>
   </div>
-  <% @posts.each do %>
-    <%= render "partials/post_preview" %>
+  <% @posts.each do |post| %>
+    <%= render partial: "partials/post", locals: {post:post}%>
   <% end %>
   <div class="flex justify-center">
-    <button class="py-2 px-4 w-fit border-4 shadow shadow-slate-500 cursor-pointer hover:bg-slate-300">See all posts</button>
+    <%= link_to 'See all posts', user_posts_path(@user), class:"py-2 px-4 w-fit border-4 shadow shadow-slate-500 cursor-pointer hover:bg-slate-300" %>
   </div>
 </div>

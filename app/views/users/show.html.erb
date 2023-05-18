@@ -1,4 +1,4 @@
 <div class="w-full m-0 p-0">
-  <%= render "partials/user_listing" %>
+  <%= render partial: "partials/user_listing", locals: {user: @user} %>
   <%= render "partials/user_details" %>
 </div>
