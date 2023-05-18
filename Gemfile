@@ -73,6 +73,6 @@ group :test do
   gem 'webdrivers'
 end
 
-gem "tailwindcss-rails", "~> 2.0"
+gem 'tailwindcss-rails', '~> 2.0'
 
-gem "foreman", "~> 0.87.2"
+gem 'foreman', '~> 0.87.2'
