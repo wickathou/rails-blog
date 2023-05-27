@@ -11,4 +11,17 @@ class PostsController < ApplicationController
     @comments = @post.comments
     @likes = @post.likes
   end
+
+  def create
+    @user = User.find(params[:user_id])
+    @post = @user.posts.create(post_params)
+    puts @post
+    # redirect_to user_posts_path(@user)
+  end
+
+  private
+
+  def post_params
+    params.require(:post).permit(:title, :text)
+  end
 end

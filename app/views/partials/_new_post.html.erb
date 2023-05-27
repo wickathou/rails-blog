@@ -1,0 +1,5 @@
+<%= form_with(model:[@user, @user.posts.build], local:true) do |form| %>
+  <%= form.text_field :title %>
+  <%= form.text_field :text%>
+  <%= form.submit "Add post"%>
+<% end %>

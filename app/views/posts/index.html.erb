@@ -1,3 +1,10 @@
 <div class="w-full m-0 p-0">
-  <%= render partial: "partials/user_posts", locals: {posts: @posts} %>
+  <% if @posts.empty? %>
+    <%= "No posts" %>
+  <% else %>
+    <%= render partial: "partials/user_posts", locals: {posts: @posts} %>
+  <% end %>
+</div>
+<div class="my-2 border-4">
+  <%= render partial: "partials/new_post"%>
 </div>

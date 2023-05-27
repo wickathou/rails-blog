@@ -10,4 +10,8 @@ class UsersController < ApplicationController
     @posts = params[:all] ? @user.posts : @user.return_last_three_posts
     # @posts = @user.return_last_three_posts
   end
+
+  def current_user
+    @user = User.first
+  end
 end
